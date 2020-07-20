@@ -1,39 +1,57 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+--UX--
 
-Welcome USER_NAME,
+This is the classic game of Rock-Paper-Scissors.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Rock-Paper-Scissors (also known by other permutations such as scissors paper rock, scissors paper stone or ro-sham-bo) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). "Scissors" is identical to the two-fingered V sign (also indicating "victory" or "peace") except that it is pointed horizontally instead of being held upright in the air. A simultaneous, zero-sum game, it has only two possible outcomes: a draw, or a win for one player and a loss for the other.
 
-## Gitpod Reminders
+A player who decides to play rock will beat another player who has chosen scissors ("rock crushes scissors" or sometimes "blunts scissors"[1]), but will lose to one who has played paper ("paper covers rock"); a play of paper will lose to a play of scissors ("scissors cuts paper"). If both players choose the same shape, the game is tied and is usually immediately replayed to break the tie. The type of game originated in China and spread with increased contact with East Asia, while developing different variants in signs over time. Other names for the game in the English-speaking world include roshambo and other orderings of the three items, with "rock" sometimes being called "stone".
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The game has three main buttons representing the three hand shapes each of both players must simultaneously make to participate and/or win or lose or draw in this game.
 
-`python3 -m http.server`
+In this instance the game is played between the user and the computer.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+--Features--
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The page provides a header with the title of the game as well as a score board and the name of the two players i.e. the user("User") and the computer("Comp").
 
-A blue button should appear to click: *Make Public*,
+By clicking each button repeatedly the user selects the shape he wants to use and simultaneously the computer randomly choses a different or identical shape resulting in win, lose or draw.
 
-Another blue button should appear to click: *Open Browser*.
+Between the score board and the buttons there is a message that displays the result of the game, for example if the user wins it displays: "Rock beats scissors. You Win!". 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+In case the user loses it displays, for example: "Scissors beat paper. You lose!".
 
-## Updates Since The Instructional Video
+If the user and the computer both chose the same shape the word "Draw" is displayed.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+--Technologies Used--
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+This app/game was created using HTML CSS and JS only, given it was part of the Interactive Front-End Module.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+--Testing--
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Upon testing the game seems to be working properly, however for some reason that I can't figure out why, it doesn't display the other messages for when the user wins or loses.
 
---------
+It stays stuck at "Paper beats rock. You win!" When inspected in the console, it says "result_p" not defined and I can't figure out what it means by that as by my account it's a reference to the ".result" class and the "p" direct child of the "div".
 
-Happy coding!
+
+--Deployment--
+
+The game has only been deployed on GITHUB pages as a part of the IFE module milestone project.
+
+
+--Credits--
+
+The pictres used for this game have been taken from "clipartkey" aas it provided the pictures for the three shapes needed for the game.
+
+The game's description was taken from "Wikipedia" as well as the general description for "Simon" 
+
+The main inspiration for this project was the game "Simon" as it's software it's programmed to repeat a series of tones and lights and requires a user to repeat the sequence.
+
+I also went on W3Schools and researched JavaScript in depth as well as YouTube tutorials from Free Code Camp. I have attached below the links from the pages referenced
+
+W3Schools: https://www.w3schools.com/js/
+Free Code Camp: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
+Clipartkey: https://www.clipartkey.com/
+Wikipedia: https://en.wikipedia.org/wiki/Rock_paper_scissors
+Wikipedia: https://en.wikipedia.org/wiki/Simon_(game)
